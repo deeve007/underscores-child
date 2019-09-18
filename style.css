@@ -1,0 +1,141 @@
+/*
+ Theme Name:   Zava Starter child
+ Description:  Child theme for Zava Starter theme
+ Author:       Zava Design
+ Author URI:   https://zava.design
+ Template:     zava-starter
+*/
+
+
+/*--------------------------------------------------------------
+# Layout basics
+--------------------------------------------------------------*/
+.site-header, .site-content, .site-footer {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.site-header, .site-content, .site-content .content-area:nth-last-child(2) {
+	margin-bottom: 3em;
+}
+@media only screen and (min-width: 800px)  {
+	.site-content .content-area:nth-last-child(2) {
+		float: left;
+		width: 66%;
+		margin-bottom: 0;
+	}
+	.site-content .widget-area {
+		float: right;
+		width: 30%;
+	}
+}
+.page-content, .entry-content, .entry-summary {
+	margin-top: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Global
+--------------------------------------------------------------*/
+html { 
+	overflow-y: scroll; 
+	overflow-x: hidden;
+} 
+.entry-title {
+	margin-top: 0;
+}
+h1, h2, h3 {
+	font-weight: 400;
+	line-height: 1.2;
+}
+h4, h5, h6 {
+	line-height: 1.2;
+}
+p:last-child, ul:last-child, .widget:last-child {
+	margin-bottom: 0;
+}
+a, a:active, a:focus {
+	outline: none;
+}
+blockquote {
+	border-left: 10px solid #eee;
+	margin-bottom: 1.5em;
+	padding-left: 0.5em;
+}
+blockquote p {
+	margin: 0;
+}
+.hentry:last-child {
+	margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-title {
+	margin: 0;
+	font-size: inherit;
+	font-weight: inherit;
+}
+@media (max-width: 800px) {
+	#site-navigation {
+		display: none;
+	}
+}
+.main-navigation {
+	background: #f7f7f7;
+}
+.main-navigation::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.main-navigation a {
+	padding: 5px 10px;
+}
+.main-navigation ul ul {
+	background: #eee;
+}
+a.toggle {
+	background: url('img/hamburger.svg') no-repeat center center;
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+@media (min-width: 800px) {
+	a.toggle {
+		display: none;
+	}
+}
+.mm-menu {
+	display: none;
+}
+
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+img.size-page-default {
+	width: 100%;
+	height: auto;
+	margin-bottom: 1.5em;
+}
+.entry-title a {
+	text-decoration: none;
+}
+.entry-title a:hover {
+	text-decoration: underline;
+}
+.entry-meta {
+	margin-bottom: 1.5em;
+}
+.entry-footer {
+	border-bottom: solid 1px rgb(0, 0, 0, 0.1);
+	padding-bottom: 1.5em;
+	margin-top: 1em;
+}
